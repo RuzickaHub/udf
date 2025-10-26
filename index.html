@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UDF Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="site-root">
+    <!-- Sticky header -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <div class="brand" aria-label="UDF">
+          <button id="mobile-menu-open" class="mobile-menu-btn" aria-controls="sidebar" aria-expanded="false" aria-label="Otevřít navigaci">☰</button>
+          <img src="assets/logo.svg" alt="" class="logo" />
+          <div class="brand-text">
+            <div class="title">UDF Documentation</div>
+            <div class="subtitle">Until Design Fluent</div>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Přepnout motiv">🌓</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container layout">
+      <!-- Off-canvas / Sidebar -->
+      <aside id="sidebar" class="sidebar" role="navigation" aria-label="Hlavní navigace">
+        <div class="sidebar-inner">
+          <div class="sidebar-brand">
+            <img src="assets/logo.svg" alt="UDF logo" class="logo-sm" />
+            <div class="brand-text-sm">
+              <div class="title-sm">UDF</div>
+              <div class="subtitle-sm">Until Design Fluent</div>
+            </div>
+          </div>
+
+          <nav id="navlist" class="navlist" aria-label="Seznam stránek">
+            <!-- generated -->
+          </nav>
+
+          <div class="sidebar-footer">
+            <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Zavřít navigaci">Zavřít</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main id="main" class="content" role="main">
+        <article id="content" class="prose">
+          <h2>Načítání dokumentace…</h2>
+          <p>Pokud repo ještě není publikováno, zobrazí se lokální fallback obsah.</p>
+        </article>
+      </main>
+    </div>
+
+    <div id="overlay" class="overlay hidden" tabindex="-1" aria-hidden="true"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
